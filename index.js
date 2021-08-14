@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const path = require("path");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
@@ -37,4 +37,4 @@ app.delete("/api/notes/:id", (req, res) => {
   res.json(notesDB);
 })
 
-app.listen(PORT, () => console.log("Server running on http:localhost:"+ PORT));
+app.listen(PORT, () => console.log("Server running on port:"+ PORT))
